@@ -30,7 +30,7 @@ router.post("/withdraw", checkIfATMInitialized, (req, res) => {
   }
 });
 
-// // //
+// //
 
 router.get("/balance", checkIfATMInitialized, (req, res) => {
   const balance = {
