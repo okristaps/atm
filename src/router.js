@@ -28,7 +28,7 @@ router.post("/withdraw", checkIfATMInitialized, (req, res) => {
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-});
+}); //
 
 router.get("/balance", checkIfATMInitialized, (req, res) => {
   const balance = {
